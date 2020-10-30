@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ze Hao</string>
+    <string name="event_edit_text">Event Name</string>
+    <string name="date_edit_text">Date</string>
+    <string name="description_edit_text">Description</string>
+    <string name="save_event_button">Save</string>
+    <string name="delete_event_button">Delete</string>
+    <string name="add_event_button">New Event</string>
+    <string name="name_text_label">Name</string>
+    <string name="date_text_label">Date</string>
+</resources>

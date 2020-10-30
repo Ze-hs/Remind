@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/eventEditText"
+        android:layout_width="490dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="50"
+        android:text="@string/event_edit_text"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="490dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="none|text"
+        android:maxLength="50"
+        android:text="@string/date_edit_text"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventEditText" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="490dp"
+        android:layout_height="398dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="text|textMultiLine"
+        android:maxLength="300"
+        android:singleLine="false"
+        android:text="@string/description_edit_text"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteEventButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateEditText" />
+
+    <Button
+        android:id="@+id/deleteEventButton"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/delete_event_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+
+    <Button
+        android:id="@+id/saveEventButton"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/save_event_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+
+</android.support.constraint.ConstraintLayout>
